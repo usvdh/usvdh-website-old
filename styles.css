@@ -13,3 +13,26 @@ p {
   font-family: Roboto;
   src:url('assets/Roboto-Regular.ttf');
 }
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 0px;
+  display: flex;
+}
+.logo {
+  width: 100px;
+  height: 16px;
+  padding: 20px;
+}
+.navbar-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
