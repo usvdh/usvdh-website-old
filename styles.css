@@ -7,3 +7,9 @@ h1 {
 p {
   color: red;
 }
+
+@font-face
+{
+  font-family: Roboto;
+  src:url('assets/Roboto-Regular.ttf');
+}
