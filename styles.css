@@ -36,3 +36,25 @@ p {
   color: #ffffff;
   text-decoration: none;
 }
+.under-construction-logo {
+  top: 40%;
+  left: 50%;
+  position: absolute;
+  width: 500px;
+  height: 80px;
+  padding: 20px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.under-construction {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 32px;
+  color: #ffffff;
+}
