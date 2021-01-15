@@ -1,30 +1,62 @@
-body {
-  background-color: black;
-}
-h1 {
-  color: blue;
-}
-p {
-  color: red;
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.6;
+  background-color: black;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+section {
+  padding: 7em 0;
+}
 @font-face
 {
   font-family: Roboto;
   src:url('assets/Roboto-Regular.ttf');
 }
 
+/* Navbar */
+
 .navbar {
   width: 100%;
+  background-color: #111;
+  position: fixed; 
+  z-index: 10; 
   height: 60px;
-  position: absolute;
-  top: 0px;
-  display: flex;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 20px;
+  text-decoration: none;
 }
 .logo {
   width: 100px;
-  height: 16px;
-  padding: 20px;
 }
 .navbar-link {
   font-family: Roboto;
@@ -36,25 +68,49 @@ p {
   color: #ffffff;
   text-decoration: none;
 }
-.under-construction-logo {
-  top: 40%;
-  left: 50%;
-  position: absolute;
-  width: 500px;
-  height: 80px;
-  padding: 20px;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-.under-construction {
-  position: absolute;
+
+/* Hero */
+
+.hero {
+  color: white;
   text-align: center;
-  width: 100%;
-  top: 50%;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 32px;
-  color: #ffffff;
+  padding: 15em 0;
+  background: #222;
+}
+.hero {
+  --clr-accent: #faa700;
+}
+.container {
+  width: 85%;
+  max-width: 65em;
+  margin: 0 auto;
+}
+.spacing > * + * {
+  margin-top: var(--spacer, 2rem);
+}
+.primary-title {
+  font-size: 4rem;
+  font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+  line-height: 1;
+  text-transform: uppercase;
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr-text, #fff);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  padding: .5em 1.25em;
+  background: var(--clr-accent, blue);
+  border-radius: .25em;
+  -webkit-transition: opacity 250ms linear,
+ -webkit-transform 250ms ease-in-out;
+  transition: opacity 250ms linear,
+ -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out,
+ opacity 250ms linear;
+  transition: transform 250ms ease-in-out,
+ opacity 250ms linear,
+ -webkit-transform 250ms ease-in-out;
 }
