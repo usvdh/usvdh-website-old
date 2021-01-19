@@ -80,16 +80,19 @@ Navbar
 
 /* Sidebar */
 #sidebar {
-  height: 100%;
   overflow: auto;
   float: right;
   transition: width 0.35s;
-  padding-top: 60px;
+  margin-top: 70px;
 }
 #sidebar {
   background: #111;
   width: 30%;
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  z-index: 9999;
+  position: fixed;
+  right: 10px;
 }
 #sidebar.collapsed {
   width: 0;
@@ -128,7 +131,9 @@ Navbar
   }
 }
 
-/* Hero */
+/* 
+Hero 
+*/
 
 .hero {
   color: white;
@@ -150,7 +155,6 @@ Navbar
 .typewriter {
   text-align: center;
   margin-top: 70px;
-  height: clamp(3rem, calc(5vw + 1rem), 4.5rem);
 }
 #primary-title {
   font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
