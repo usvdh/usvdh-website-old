@@ -11,11 +11,12 @@
   <body>
     <nav class="navbar">
       <a href="#home">
-        <image src="assets/usvdh-logo.svg" class="logo" />
+        <image src="assets/usvdh-logo.svg" class="usvdh-logo" />
       </a>
       <a href="/">About me</a>
       <a href="/">Projects</a>
       <a href="/">Contact</a>
+      <button title="Toggle sidebar" class="sidebar-button"></button>
     </nav>
     <!-- <header class="hero">
       <div class="container spacing">
@@ -31,11 +32,19 @@
         <a href="#" class="btn">Contact Me</a>
       </div>
     </header> -->
-    <center>
-      <image src="assets/usvdh-logo.svg" class="under-construction-logo" />
-      <h1 class='under-construction'>
-        This website is currently under construction, please come back later.
-      </h1>
-    </center>
+    <div id="sidebar" class="collapsed">
+      <a href="/">About me</a>
+      <a href="/">Projects</a>
+      <a href="/">Contact</a>
+    </div>
+    <main>
+      <center>
+        <image src="assets/usvdh-logo.svg" class="under-construction-logo" />
+        <h1 class="under-construction">
+          This website is currently under construction, please come back later.
+        </h1>
+      </center>
+    </main>
+    <script type="text/javascript" src="js/sidebar.js"></script>
   </body>
 </html>
