@@ -137,8 +137,9 @@ Hero
 .hero {
   color: white;
   text-align: center;
-  padding: 15em 0;
+  padding: 15vh 0;
   background: #222;
+  height: 90vh;
 }
 .hero {
   --clr-accent: #faa700;
@@ -219,7 +220,7 @@ Footer
 .footer {
   width: 100%;
   position: relative;
-  height: auto;
+  height: 10vh;
   /* background-color: #070617; */
   background-color: #111;
 }
